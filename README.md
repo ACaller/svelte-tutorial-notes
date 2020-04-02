@@ -35,8 +35,8 @@ I took this [Svelte.js - The Complete Guide (incl. Sapper.js)](https://www.udemy
 1. `animatedValue = tweened(value, {delay, duration, easing})` from motion
 1. `physicsAnimatedValue = spring(value, {siffness, damping, precision})` from motion
 1. `<div transition:fade={{delay, duration, easing, ...etc}} />` etc from transition or `<div in:fade out:fly />` if you want different
-1. `{#await fn}...{:then data}...{:catch err}...{/await}
-1. `<svelte:component this={Component}/>
+1. `{#await fn}...{:then data}...{:catch err}...{/await}`
+1. `<svelte:component this={Component}/>`
 1. `<script context="module">` runs once when first instance of component is loaded
 1. `[slug].svelte` for dynamic routing, then `{slug} = page.params`
 1. `export function preload(page){ reutrn this.fetch('')}` fetches data serverside on first page. clientside thereafter
